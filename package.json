@@ -1,7 +1,7 @@
 {
   "name": "react-useoverlay",
-  "version": "0.7.0",
-  "author": "Nedim Arabacı",
+  "version": "0.7.1",
+  "homepage": "https://ned.im/react-useoverlay",
   "license": "MIT",
   "description": "for creating floating components easily",
   "main": "dist/react-useoverlay.cjs.js",
@@ -52,5 +52,13 @@
     "extends": [
       "./node_modules/rollpkg/configs/eslint"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/needim/react-useoverlay.git"
+  },
+  "author": {
+    "name": "Nedim Arabacı",
+    "url": "http://ned.im"
   }
 }
