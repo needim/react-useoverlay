@@ -1,0 +1,56 @@
+{
+  "name": "react-useoverlay",
+  "version": "0.7.0",
+  "author": "Nedim Arabacı",
+  "license": "MIT",
+  "description": "for creating floating components easily",
+  "main": "dist/react-useoverlay.cjs.js",
+  "module": "dist/react-useoverlay.esm.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "run-p dev:lib dev:demo dev:docs",
+    "dev:lib": "rollpkg watch",
+    "dev:demo": "npm run dev --prefix demo",
+    "dev:docs": "npm run dev --prefix docs",
+    "build": "run-s build:lib build:gh",
+    "build:lib": "rollpkg build",
+    "build:gh": "npm run export --prefix docs",
+    "prepublishOnly": "npm run lint && npm run build",
+    "lint": "eslint src"
+  },
+  "peerDependencies": {
+    "@floating-ui/react-dom-interactions": ">=0.6.6",
+    "framer-motion": ">=6.3.13",
+    "react": ">=16.8"
+  },
+  "devDependencies": {
+    "@floating-ui/react-dom-interactions": "^0.6.6",
+    "@types/react": "^18.0.14",
+    "framer-motion": "^6.3.13",
+    "npm-run-all": "^4.1.5",
+    "react": "file:docs/node_modules/react",
+    "react-dom": "^18.2.0",
+    "rollpkg": "^0.5.7",
+    "typescript": "^4.7.4"
+  },
+  "keywords": [
+    "floating",
+    "overlay",
+    "tooltip",
+    "modal",
+    "drawer"
+  ],
+  "prettier": "rollpkg/configs/prettier.json",
+  "eslintConfig": {
+    "ignorePatterns": [
+      "docs/**/*"
+    ],
+    "extends": [
+      "./node_modules/rollpkg/configs/eslint"
+    ]
+  }
+}
