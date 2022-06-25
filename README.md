@@ -42,11 +42,6 @@ This functionality is currently available for React DOM but will be made agnosti
 ### 1. Because it simplifies the API you need to deal with it.
 > That's it.
 
-{% callout title="You should know!" %}
-For styling `useOverlay` doesn't do anything than passing `className` parameter to floating overlay for now. It's acting like headless. You can use Tailwind or some other solutions for syling. Depends on you!
-{% /callout %}
-
-
 ## Use cases
 
 - If you don't wanna handle all the logic of floating elements
